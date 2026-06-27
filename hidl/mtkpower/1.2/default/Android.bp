@@ -21,3 +21,14 @@ cc_binary {
         "vendor.mediatek.hardware.mtkpower@1.2",
     ],
 }
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkpower-V1-ndk",
+    srcs: [
+        "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so"
+    ],
+    system_ext_specific: true,
+    strip: {
+        none: true,
+    },
+}
